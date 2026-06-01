@@ -1,9 +1,14 @@
-namespace Jugadores{
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-    public interface Ijugador{
-
-      public int tiempo{get;set;}
-      public bool Cansado();
-      public void Correr (int minutos);
-      public void Descansar (int minutos);
-      
+namespace ejercicio_3
+{
+    internal interface IJugador
+    {
+        bool correr(int minutos);
+        bool cansado();
+        void descansar(int minutos);
+    }
