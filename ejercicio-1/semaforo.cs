@@ -8,9 +8,9 @@ namespace ejercicio_1
 {
     public class Semaforo
     {
-        public string ColorActual { get; private set; }
-        public int TiempoEnColor { get; private set; }
-        public bool EsIntermitente { get; private set; }
+        public string ColorActual { get;set; }
+        public int TiempoEnColor { get;set; }
+        public bool EsIntermitente { get;set; }
 
         private string estadoIntermitente;
 
