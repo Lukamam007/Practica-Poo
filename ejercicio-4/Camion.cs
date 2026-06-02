@@ -9,24 +9,21 @@ namespace ejercicio_4
     public class Camion : IVehiculo
     {
         private int posicionActual;
-        public int Velocidad { get; private set; }
+        public int Velocidad { get;set; }
 
         public Camion()
         {
             this.posicionActual = 0;
-            this.Velocidad = 30; // Velocidad fija 
+            this.Velocidad = 30; 
         }
-
         public void mover(int tiempo)
         {
             this.posicionActual += this.Velocidad * tiempo;
         }
-
         public int posicion()
         {
             return this.posicionActual;
         }
-
         public void reiniciarPosicion()
         {
             this.posicionActual = 0;
